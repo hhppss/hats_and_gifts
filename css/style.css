@@ -1,0 +1,380 @@
+@font-face {
+  font-family: 'Rubik Black Italic';
+  src: url("../fonts/Rubik-BlackItalic.woff2") format("woff2"), url("../fonts/Rubik-BlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Rubik Medium';
+  src: url("../fonts/Rubik-Medium.woff2") format("woff2"), url("../fonts/Rubik-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Rubik Bold';
+  src: url("../fonts/Rubik-Bold.woff2") format("woff2"), url("../fonts/Rubik-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Rubik Bold Italic';
+  src: url("../fonts/Rubik-BoldItalic.woff2") format("woff2"), url("../fonts/Rubik-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Rubik Black';
+  src: url("../fonts/Rubik-Black.woff2") format("woff2"), url("../fonts/Rubik-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Rubik Medium Italic';
+  src: url("../fonts/Rubik-MediumItalic.woff2") format("woff2"), url("../fonts/Rubik-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Rubik Light';
+  src: url("../fonts/Rubik-Light.woff2") format("woff2"), url("../fonts/Rubik-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Rubik Light Italic';
+  src: url("../fonts/Rubik-LightItalic.woff2") format("woff2"), url("../fonts/Rubik-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Rubik Italic';
+  src: url("../fonts/Rubik-Italic.woff2") format("woff2"), url("../fonts/Rubik-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Rubik Regular';
+  src: url("../fonts/Rubik-Regular.woff2") format("woff2"), url("../fonts/Rubik-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+* {
+  font-family: 'Rubik Regular';
+  outline: none; }
+
+h1 {
+  font-family: 'Rubik Bold';
+  font-size: 2.1em; }
+
+h2 {
+  font-family: 'Rubik Bold';
+  font-size: 1.8em; }
+
+h3 {
+  font-family: 'Rubik Medium';
+  font-size: 1.3em; }
+
+h4 {
+  font-family: 'Rubik Medium';
+  font-size: 1.1em; }
+
+h5 {
+  font-family: 'Rubik Light';
+  font-size: 1em; }
+
+h6 {
+  font-family: 'Rubik Light';
+  font-size: 0.9em; }
+
+p {
+  font-family: 'Rubik Regular';
+  font-size: 14px;
+  line-height: 17px; }
+
+a {
+  font-family: 'Rubik Regular';
+  color: #180D38;
+  font-size: 0.9em;
+  text-decoration: underline;
+  transition-duration: 0.2s; }
+
+body {
+  background-color: #f6f6f6; }
+
+.cart {
+  width: 110px;
+  height: 40px;
+  background-color: #180D38;
+  color: #fff;
+  padding: 0.7em 1.3em;
+    padding-outline: none;
+  text-decoration: none;
+  border-radius: 25px; }
+  .cart:hover {
+    color: #DFDCCE;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    text-decoration: none; }
+
+.ad_full_cont img {
+  width: 100%;
+  margin: 50px 0; }
+
+.active-menu {
+  border-right: 5px solid red; }
+
+header {
+  position: fixed;
+  width: 100%;
+  background-color: #f6f6f6;
+  z-index: 8; }
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 70px; }
+  .header-menu {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100%;
+    overflow: auto;
+    background-color: #e5e5e5;
+    padding: 5vh 0 0 0;
+    transition: all 0.5s;
+    z-index: 5; }
+    .header-menu ul {
+      list-style: none;
+      margin: 0;
+      padding-left: 20px; }
+      .header-menu ul li, .header-menu ul a {
+        text-decoration: none;
+        font-family: 'Rubik Medium';
+        font-size: 1.1em;
+        color: #180D38;
+        padding: 10px 0; }
+      .header-menu ul li:hover {
+        border-right: 5px solid red; }
+  .header-active {
+    left: 0;
+    transition: all 0.5s; }
+  .header .site-name {
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Rubik Bold';
+    font-size: 1.4em; }
+  .header-name {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .header-burger {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    z-index: 80;
+    margin-top: 5px;
+    float: left; }
+    .header-burger span {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 2.4px;
+      top: 0;
+      background-color: #323232;
+      transition: all 0.05s ease-out 0.05s; }
+  .header-burger .bar-top {
+    top: 12px; }
+  .header-burger .bar-bot {
+    top: 6px; }
+  .header-burger .bar-mid {
+    top: -0px; }
+  .header .search_form {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap; }
+    .header .search_form input {
+      width: 90%;
+      background: transparent;
+      border: none;
+      font-family: 'Rubik Regular';
+      font-size: 0.9em; }
+    .header .search_form button {
+      background: transparent;
+      border: none;
+      color: #B2B2B2; }
+  .header-cart {
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    float: right;
+    align-items: center; }
+    .header-cart p {
+      margin-bottom: 0; }
+
+.banner-img {
+  width: 100%;
+  border-radius: 25px;
+  box-shadow: 0px 24px 60px rgba(0, 0, 0, 0.1); }
+
+.category-product {
+  position: relative;
+  margin-top: 15px; }
+  .category-product img {
+    width: 100%;
+    border-radius: 25px;
+    box-shadow: 0px 24px 60px rgba(0, 0, 0, 0.1); }
+  .category-product h3 {
+    position: absolute;
+    font-size: 2em;
+    top: 20px;
+    right: 20px;
+    color: #F1FFE4; }
+
+.liders h2 {
+  margin: 35px 0; }
+
+.liders-slider {
+  width: 100%; }
+
+.lider-item {
+  width: 270px;
+  height: 327px;
+  margin: 0 15px;
+  box-shadow: 0px 24px 60px rgba(0, 0, 0, 0.1); }
+  .lider-item img {
+    max-width: 270px;
+    max-height: 360px;
+    z-index: 1; }
+  .lider-item__text {
+    position: relative;
+    width: 100%;
+    height: 110px;
+    padding: 10px;
+    margin-top: -50px;
+    background-color: #DFDCCE;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 2; }
+  .lider-item__count {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row; }
+
+.news-mainpage h2 {
+  margin: 35px 0; }
+
+.news-card__slider {
+  width: 100%; }
+
+.news-card-item {
+  max-width: 550px;
+  max-height: 500px;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  padding: 10px;
+  margin-right: 10px; }
+  .news-card-item h3 {
+    width: 100%;
+    height: 100px; }
+  .news-card-item img {
+    width: 100%; }
+
+.news-card-avatar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px; }
+  .news-card-avatar img {
+    width: 45px;
+    height: 45px; }
+
+.news-card-data {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+  .news-card-data span {
+    font-size: 0.8em;
+    color: #B2B2B2; }
+
+footer {
+  margin-top: 70px;
+  padding-top: 70px;
+  width: 100%;
+  min-height: 500px;
+  background-color: #E5E5E5; }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 500px; }
+  .footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  .footer-menu {
+    width: 300px; }
+    .footer-menu h3 {
+      margin-bottom: 20px; }
+    .footer-menu ul {
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+      .footer-menu ul li, .footer-menu ul a {
+        font-family: 'Rubik Light';
+        font-size: 1em;
+        margin: 5px 0;
+        text-decoration: none; }
+  .footer-sitebar {
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row; }
+  .footer-copy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    height: 100px; }
+
+@media only screen and (max-width: 767px) {
+  .search_form {
+    display: none !important; }
+  .header-cart {
+    display: none; }
+  .header-menu {
+    width: 100%;
+    height: 100%;
+    left: -100%;
+    padding-top: 50px; }
+  .header-active {
+    left: 0; }
+  .news-card-item {
+    width: 300px; }
+  .footer-content {
+    flex-direction: column;
+    justify-content: center; }
+  .footer-sitebar {
+    margin-top: 50px;
+    flex-direction: column; }
+    .footer-sitebar h3 {
+      text-align: center; } }

@@ -1,0 +1,370 @@
+@import "_fonts.sass"
+$color-backgroung:   #f6f6f6
+$text-dark: 	 			 #180D38
+$text-light:   			 #B2B2B2
+$color-element:			 #DFDCCE
+$color-yellow: 			 #FFFBED
+$color-blue:   			 #F0F2FF
+$color-green:  			 #F1FFE4
+$color-red:    			 #FFE7EB
+
+=RL()
+	font-family: 'Rubik Light'
+=RR()
+	font-family: 'Rubik Regular'
+=RM()
+	font-family: 'Rubik Medium'
+=RB()
+	font-family: 'Rubik Bold' 
+*
+	+RR()
+	outline: none
+h1 
+	+RB()
+	font-size: 2.1em
+h2 
+	+RB()
+	font-size: 1.8em
+h3 
+	+RM()
+	font-size: 1.3em
+h4 
+	+RM()
+	font-size: 1.1em
+h5 
+	+RL()
+	font-size: 1em
+h6
+	+RL()
+	font-size: 0.9em
+p 
+	+RR()
+	font-size: 14px
+	line-height: 17px
+a 
+	+RR()
+	color: $text-dark
+	font-size: 0.9em
+	text-decoration: underline
+	transition-duration: 0.2s
+body 
+	background-color: $color-backgroung
+
+
+// Перенос на WP
+.cart 
+	width: 110px
+	height: 40px
+	background-color: $text-dark
+	color: #fff
+	padding: .7em 1.3em
+  outline: none
+	text-decoration: none
+	border-radius: 25px
+	&:hover
+		color: $color-element
+		box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2)
+		text-decoration: none
+		
+.ad_full_cont img 
+	width: 100%
+	margin: 50px 0
+.active-menu 
+	border-right: 5px solid red
+header
+  position: fixed
+  width: 100%
+  background-color: $color-backgroung
+  z-index: 8
+.header
+	position: relative
+	width: 100%
+	height: 70px
+	&-menu
+		position: fixed
+		top: 0
+		left: -300px
+		width: 300px
+		height: 100%
+		overflow: auto
+		background-color: #e5e5e5
+		padding: 5vh 0 0 0
+		transition: all 0.5s
+		z-index: 5
+		ul 
+			list-style: none
+			margin: 0
+			padding-left: 20px
+			li, a 
+				text-decoration: none
+				+RM()
+				font-size: 1.1em
+				color: $text-dark
+				padding: 10px 0
+			li:hover
+				border-right: 5px solid red
+		&-close
+
+	&-active
+		left: 0
+		transition: all 0.5s
+	.site-name 
+		height: 70px
+		display: flex
+		flex-direction: row
+		justify-content: center
+		align-items: center
+		+RB()
+		font-size: 1.4em
+	&-name 
+		height: 70px
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&-burger
+		position: relative
+		width: 20px
+		height: 20px
+		z-index: 80
+		margin-top: 5px
+		float: left
+		span 
+      position: absolute
+      left: 0
+      width: 100%
+      height: 2.4px
+      top: 0
+      background-color: #323232
+      transition: all 0.05s ease-out 0.05s
+	&-burger .bar-top 
+		top: 12px
+	&-burger .bar-bot
+		top: 6px
+	&-burger .bar-mid 
+		top: -0px
+	.search_form 
+		height: 70px
+		display: flex
+		justify-content: space-between
+		align-items: center
+		flex-wrap: nowrap
+		input 
+			width: 90%
+			background: transparent
+			border: none
+			+RR()
+			font-size: 0.9em
+		button 
+			background: transparent
+			border: none
+			color: $text-light
+	&-cart 
+		height: 70px
+		display: flex
+		flex-direction: row
+		float: right
+		align-items: center
+		p 
+			margin-bottom: 0
+.banner-img 
+	width: 100%
+	border-radius: 25px
+	box-shadow: 0px 24px 60px rgba(0, 0, 0, 0.1)
+.category-product
+	position: relative
+	margin-top: 15px
+	img 
+		width: 100%
+		border-radius: 25px
+		box-shadow: 0px 24px 60px rgba(0, 0, 0, 0.1)
+	h3
+		position: absolute
+		font-size: 2em
+		top: 20px
+		right: 20px
+		color: $color-green
+.liders
+	h2
+		margin: 35px 0
+	&-slider 
+		width: 100%
+.lider-item
+	width: 270px
+	height: 327px
+	margin: 0 15px
+	box-shadow: 0px 24px 60px rgba(0, 0, 0, 0.1)
+	img 
+		max-width: 270px
+		max-height: 360px
+		z-index: 1
+	&__text
+		position: relative
+		width: 100%
+		height: 110px
+		padding: 10px
+		margin-top: -50px
+		background-color: $color-element
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		z-index: 2
+	&__count
+		display: flex
+		justify-content: space-between
+		flex-direction: row
+.news-mainpage 
+	h2
+		margin: 35px 0
+.news-card
+	&__slider
+		width: 100%
+	&-item 
+		max-width: 550px
+		max-height: 500px
+		height: 100%
+		width: 100%
+		background-color: #fff
+		padding: 10px
+		margin-right: 10px
+		h3 
+			width: 100%
+			height: 100px
+		img 
+			width: 100%
+	&-avatar 
+		display: flex
+		justify-content: space-between
+		margin-bottom: 20px
+		img 
+			width: 45px
+			height: 45px
+	&-data 
+		text-align: right
+		display: flex
+		flex-direction: column
+		justify-content: space-around
+		span 
+			font-size: 0.8em
+			color: $text-light
+footer 
+	margin-top: 70px
+	padding-top: 70px
+	width: 100%
+	min-height: 500px
+	background-color: #E5E5E5
+.footer
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	min-height: 500px
+	&-content
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+	&-menu 
+		width: 300px
+		h3 
+			margin-bottom: 20px
+		ul 
+			list-style: none
+			margin: 0
+			padding: 0
+			li, a
+				+RL()
+				font-size: 1em
+				margin: 5px 0
+				text-decoration: none
+	&-sitebar 
+		max-width: 800px
+		width: 100%
+		display: flex 
+		justify-content: space-around
+		flex-direction: row
+	&-copy 
+		display: flex
+		justify-content: space-between
+		align-items: center
+		flex-direction: row
+		height: 100px
+				
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 767px)
+	.search_form
+		display: none !important
+	.header-cart
+		display: none
+	.header
+		&-menu
+			width: 100%
+			height: 100%
+			left: -100%
+			padding-top: 50px
+		&-active 
+			left: 0
+	.news-card
+		&-item 
+			width: 300px
+	.footer
+		&-content
+			flex-direction: column
+			justify-content: center
+		&-sitebar 
+			margin-top: 50px
+			flex-direction: column
+			h3 
+				text-align: center
